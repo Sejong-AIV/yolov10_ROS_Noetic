@@ -20,7 +20,7 @@ class Detector:
         rospy.sleep(2)
 
         ## Model CheckPoint
-        model_path = "/home/stride_ws/src/stride_utils/vision_utils/src/train_n_final/weights/best.pt"
+        model_path = "/home/stride_ws/src/stride_utils/vision_utils/src/checkpoints/train_n_final/weights/best.pt"
         self.model = YOLO(model_path)
 
         self.image_sub = rospy.Subscriber(
